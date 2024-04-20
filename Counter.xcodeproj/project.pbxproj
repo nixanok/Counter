@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E09F7D22BD3DC7700589F01 /* HistoryEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E09F7D12BD3DC7700589F01 /* HistoryEvent.swift */; };
 		1E54A2972BD2EED400CC915C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54A2962BD2EED400CC915C /* AppDelegate.swift */; };
 		1E54A2992BD2EED400CC915C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54A2982BD2EED400CC915C /* SceneDelegate.swift */; };
 		1E54A29B2BD2EED400CC915C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E54A29A2BD2EED400CC915C /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E09F7D12BD3DC7700589F01 /* HistoryEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEvent.swift; sourceTree = "<group>"; };
 		1E54A2932BD2EED400CC915C /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E54A2962BD2EED400CC915C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E54A2982BD2EED400CC915C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				1E54A29F2BD2EED500CC915C /* Assets.xcassets */,
 				1E54A2A12BD2EED500CC915C /* LaunchScreen.storyboard */,
 				1E54A2A42BD2EED500CC915C /* Info.plist */,
+				1E09F7D12BD3DC7700589F01 /* HistoryEvent.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E54A29B2BD2EED400CC915C /* ViewController.swift in Sources */,
+				1E09F7D22BD3DC7700589F01 /* HistoryEvent.swift in Sources */,
 				1E54A2972BD2EED400CC915C /* AppDelegate.swift in Sources */,
 				1E54A2992BD2EED400CC915C /* SceneDelegate.swift in Sources */,
 			);
