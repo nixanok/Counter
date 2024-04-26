@@ -17,71 +17,77 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeM-Pb-dgs">
-                                <rect key="frame" x="94" y="163" width="205" height="20.333333333333343"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="155" y="140" width="83.333333333333314" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GY-Qr-lOB">
-                                <rect key="frame" x="46" y="577.66666666666663" width="130" height="34.333333333333371"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="5he-El-ekS"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+1">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="counterIncrementUIButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbC-un-wLh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-rX-Nkf">
-                                <rect key="frame" x="217" y="577.66666666666663" width="130" height="34.333333333333371"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="2WL-rK-cgp"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="-1">
-                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="counterDecrementUIButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9az-eO-0YJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oru-AQ-YTa">
-                                <rect key="frame" x="165" y="728" width="63" height="35"/>
+                                <rect key="frame" x="165.33333333333334" y="728.66666666666663" width="62.666666666666657" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="reset"/>
                                 <connections>
                                     <action selector="resetCounterUIButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TyT-xN-g28"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YDj-28-5ri">
-                                <rect key="frame" x="76" y="264" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YDj-28-5ri">
+                                <rect key="frame" x="30" y="263.66666666666669" width="333" height="129.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="88" translatesAutoresizingMaskIntoConstraints="NO" id="QZV-uF-N4A">
+                                <rect key="frame" x="32.666666666666657" y="577.33333333333337" width="328" height="34.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GY-Qr-lOB">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="vDg-rJ-y66"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="+1">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="counterIncrementUIButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbC-un-wLh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp4-rX-Nkf">
+                                        <rect key="frame" x="208" y="0.0" width="120" height="34.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="fm0-pt-fOK"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="-1">
+                                            <color key="baseBackgroundColor" systemColor="tintColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="counterDecrementUIButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9az-eO-0YJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <rect key="contentStretch" x="0.5" y="0.0" width="1" height="1"/>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xp4-rX-Nkf" secondAttribute="trailing" constant="46" id="CyK-rr-zhD"/>
-                            <constraint firstItem="HeM-Pb-dgs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FxS-9o-PpT"/>
-                            <constraint firstItem="HeM-Pb-dgs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="I4u-tj-AxU"/>
-                            <constraint firstItem="HeM-Pb-dgs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="104" id="PWs-af-vVP"/>
-                            <constraint firstItem="Xp4-rX-Nkf" firstAttribute="baseline" secondItem="5GY-Qr-lOB" secondAttribute="baseline" id="UNk-Au-60T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oru-AQ-YTa" secondAttribute="bottom" constant="55" id="We1-EU-Y1B"/>
-                            <constraint firstItem="oru-AQ-YTa" firstAttribute="centerX" secondItem="HeM-Pb-dgs" secondAttribute="centerX" id="g5V-FU-7ZO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5GY-Qr-lOB" secondAttribute="bottom" constant="206" id="gF6-ap-gG8"/>
-                            <constraint firstItem="Xp4-rX-Nkf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5GY-Qr-lOB" secondAttribute="trailing" constant="8" symbolic="YES" id="mO4-vw-y77"/>
-                            <constraint firstItem="5GY-Qr-lOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="46" id="vuZ-VP-AwI"/>
+                            <constraint firstItem="oru-AQ-YTa" firstAttribute="top" secondItem="QZV-uF-N4A" secondAttribute="bottom" constant="117" id="1vi-NX-l7t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oru-AQ-YTa" secondAttribute="bottom" constant="55" id="7xf-jM-xgt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YDj-28-5ri" secondAttribute="trailing" constant="30" id="8YD-s2-Hcp"/>
+                            <constraint firstItem="YDj-28-5ri" firstAttribute="top" secondItem="HeM-Pb-dgs" secondAttribute="bottom" constant="95" id="8e6-Bs-qqw"/>
+                            <constraint firstItem="YDj-28-5ri" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hij-t3-FBh"/>
+                            <constraint firstItem="YDj-28-5ri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="TFg-PO-5l7"/>
+                            <constraint firstItem="oru-AQ-YTa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X3w-JJ-zkb"/>
+                            <constraint firstItem="QZV-uF-N4A" firstAttribute="top" secondItem="YDj-28-5ri" secondAttribute="bottom" constant="184" id="dZN-Hb-3Ss"/>
+                            <constraint firstItem="HeM-Pb-dgs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hsl-zI-244"/>
+                            <constraint firstItem="HeM-Pb-dgs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="81" id="ovo-8C-tPy"/>
+                            <constraint firstItem="QZV-uF-N4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yl8-ye-ZcX"/>
                         </constraints>
                     </view>
                     <connections>

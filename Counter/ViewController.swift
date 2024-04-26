@@ -10,15 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBOutlet weak var counterUILabel: UILabel!
+    @IBOutlet private weak var counterUILabel: UILabel!
     
-    @IBOutlet weak var counterIncrementUIButton: UIButton!
+    @IBOutlet private weak var counterIncrementUIButton: UIButton!
     
-    @IBOutlet weak var counterDecrementUIButton: UIButton!
+    @IBOutlet private weak var counterDecrementUIButton: UIButton!
     
-    @IBOutlet weak var historyEventsUITextView: UITextView!
+    @IBOutlet private weak var historyEventsUITextView: UITextView!
     
-    @IBOutlet weak var resetUIButton: UIButton!
+    @IBOutlet private weak var resetUIButton: UIButton!
     
     private var events : [HistoryEvent] = []
     
@@ -37,9 +37,12 @@ class ViewController: UIViewController {
         counterDecrementUIButton.setTitle("-1", for: .normal)
         
         resetUIButton.setTitle("Обнулить", for: .normal)
+        resetUIButton.layer.cornerRadius = 10
         
         counterIncrementUIButton.backgroundColor = .red
         counterDecrementUIButton.backgroundColor = .blue
+        counterIncrementUIButton.layer.cornerRadius = 10
+        counterDecrementUIButton.layer.cornerRadius = 10
         
         historyEventsUITextView.text = ""
         historyEventsUITextView.isEditable = false
